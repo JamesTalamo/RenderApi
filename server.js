@@ -2,7 +2,7 @@ require('dotenv').config() // Lagi tandaan, para maka connect gamit yung mga hid
 const connectDB = require('./connectMongo')
 const cors = require('cors')
 
-cors()
+app.use(cors())
 connectDB() 
 
 const bodyParser = require('body-parser')
